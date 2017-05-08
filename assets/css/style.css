@@ -125,10 +125,9 @@ label.focus, label.active {
 	color: #fff !important;
 }
 
-
-
-
-
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none !important;
+}
 
 
 /*FOOTER*/
