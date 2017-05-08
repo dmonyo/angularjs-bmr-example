@@ -10,8 +10,9 @@
     <!-- Bootstrap -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -46,7 +47,7 @@
           <div class="row" ng-controller="bmrController">
               <div class="col-lg-6 col-md-6 left-header">
               
-                  <div ng-show="result.show" class="result">
+                  <div ng-show="result.show" class="result" ng-cloak>
                     <p>For a {{result.age}} years {{result.gender}}  </p>
 
                     <p>with your workout level you have:</p>
@@ -57,7 +58,7 @@
                     <a type="button" href="#" class="btn btn-default text-center" ng-click="resetValues();">Reset Values</a>
 
                   </div>
-                  <div class="result" ng-show="!result.show">                    
+                  <div class="result" ng-show="!result.show" ng-cloak>                    
                     <h3>it's easy to try!!</h3>
                     <p>Just put your data, hit the button, and...</p>
                     <h3>Read your results!!</h3>
@@ -72,7 +73,7 @@
 
                       <div class="btn-group " data-toggle="buttons">  
                                               
-                        <label class="btn btn-sm btn-default active" ng-click="setGender('male')">
+                        <label class="btn btn-sm btn-default active" ng-click="setGender('male')" >
                           <input type="radio" name="options"  autocomplete="off" > I am a boy
                         </label>
                         <label class="btn btn-sm btn-default" ng-click="setGender('female')">
@@ -92,7 +93,7 @@
                     </div>
 
                     
-                    <div class="form-group row" ng-show="isImperial()">
+                    <div class="form-group row" ng-show="isImperial()" ng-cloak>
                       <label class="col-sm-2 col-form-label" for="exampleInputEmail1">Height (Feet/in)</label>
                       <div class="col-sm-10">
                         <input type="number" class="form-control" ng-model="data.feetHeight" id="exampleInputEmail1" placeholder="Feets">
@@ -101,7 +102,7 @@
                       
                     </div>
                     
-                    <div class="form-group row" ng-show="isImperial()">
+                    <div class="form-group row" ng-show="isImperial()" ng-cloak>
                       <label class="col-sm-2 col-form-label"  for="exampleInputEmail1">Weight (pounds)</label>
                       <div class="col-sm-10">
                         <input type="number" class="form-control" ng-model="data.poundWeight"  id="exampleInputEmail1" placeholder="Weight in pounds">
@@ -110,13 +111,13 @@
                     </div>
                   
                 
-                    <div class="form-group row" ng-show="!isImperial()">
+                    <div class="form-group row" ng-show="!isImperial()" ng-cloak>
                       <label class="col-sm-2 col-form-label" for="exampleInputEmail1">Height (cms)</label>
                       <div class="col-sm-10">                            
                         <input type="number" class="form-control" ng-model="data.cmsHeight" name="height-cms" placeholder="Height in cms">                         
                       </div>
                     </div>
-                    <div class="form-group row" ng-show="!isImperial()">
+                    <div class="form-group row" ng-show="!isImperial()" ng-cloak>
                       <label class="col-sm-2 col-form-label" for="exampleInputEmail1">Weight (Kgs)</label>
                       <div class="col-sm-10">                            
                         <input type="number" class="form-control" ng-model="data.kgWeight"  id="exampleInputEmail1" placeholder="Weight in Kgs">
@@ -149,7 +150,7 @@
               
               </div>
 
-          </div>            
+          </div>   
           <br><br>
           <div class="row text-center">            
             <a  class="btn btn-default" href="https://github.com/dmonyo/angularjs-bmr-example">
