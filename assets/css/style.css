@@ -1,0 +1,218 @@
+p, h1 {
+ font-family: 'Volkhov', serif;
+}
+.centerContent{
+	text-align: center;
+}
+
+body {
+	color: #FFFFFF ;
+}
+
+/*NAVIGATION*/
+
+.navbar {
+	background-color: rgba(0,0,0,0.0);
+	font-family: 'Lato', sans-serif;
+	height: 60px;
+    border-bottom: 0px;
+    transition: background-color .5s ease 0s;
+}
+
+.navbar a {
+ color:#FFFFFF !important;
+}
+
+.navbar a:hover {
+ color:#ffffff !important;
+ background-color:#04B4AE !important;
+}
+
+.navbar-header .navbar-brand {
+ color:#FFFFFF !important;
+ font-size:1.5em;
+}
+
+.navbar-default .nav li.active a {
+ color:#646464 !important;
+}
+
+.navbar-header .navbar-brand:hover,
+.navbar.opaque .navbar-header .navbar-brand:hover{
+ background-color: transparent !important;
+}
+
+.navbar.opaque {
+    background-color: #FFFFFF;
+    height: 60px;
+    transition: background-color .5s ease 0s;
+}
+
+.navbar.opaque a {
+ color:#088A85 !important;
+}
+
+.navbar.opaque a:hover {
+ color:#FFFFFF !important;
+ background-color:#04B4AE !important;
+}
+
+.navbar.opaque .navbar-header .navbar-brand:hover{
+ color:#088A85 !important;
+}
+
+
+
+.navbar-default .nav li.active a {
+ color:#1d1d1d !important;
+}
+
+
+/* HEADER*/
+
+.header {
+	padding: 28vh 0 100px;
+	background-size: cover;
+	width: 100%;
+	height: 98vh;
+ 	background-image: url('../images/background.jpeg') ;
+	background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    background-color: #999;
+
+}
+
+.header button, .buy button {
+	padding-top:2px;
+	width: 82%;
+}
+
+.header h1 {
+ color: white;
+ font-family: 'Oswald', cursive;
+ font-size: 5em;
+}
+
+.header h2 {
+ color: white;
+ font-family: 'Oswald', cursive;
+ font-size: 5em;
+}
+
+.header p {
+ color:white;
+ font-size:1.3em;
+}
+
+.left-header{
+	padding-bottom: 5em;
+} 
+
+.result {
+	background-color: rgba(253,253,253,0.5);
+	color: #000000;
+	padding: 2em 0 2em;
+	border-radius: 1em;
+}
+.result p{
+	color: #000000;
+}
+
+label.focus, label.active {
+	background-color: #428bca !important;
+	color: #fff !important;
+}
+
+
+
+
+
+
+
+/*FOOTER*/
+.footer{
+	background-color: #2E2E2E;
+	color:#E6E6E6;
+ 	padding:30px 0 30px;
+}
+
+@media(max-width:768px) {
+
+	/*HEADER*/
+	 .header {
+	  text-align:center;
+	  padding-top: 20vh;
+	 }
+
+	 .header h1 {
+	 font-size:3.5em;
+	 }
+
+	 .header h1 {
+	 font-size:3.5em;
+	 }
+	 
+	 .header p {
+	  font-size:1em;
+	 }
+	 
+	 .header button, .buy button  {
+	  padding: 5px 12px 5px 12px;
+	 }
+	 
+	 .header img {
+	  padding-top:10%;
+	 }
+
+	 /*NAVBAR*/
+	.navbar-header, .navbar-collapse.collapsing, .navbar-collapse.collapse.in {
+	    background-color: transparent !important;
+	}	 
+
+
+		
+
+	
+
+}
+
+@media(max-width: 479px) {
+
+	/*HEADER*/
+	 .header {
+	  text-align:center;
+	  padding-top: 20vh;
+	 }
+
+	 .header h1 {
+	 font-size:3.5em;
+	 }
+
+	 .header h1 {
+	 font-size:3.5em;
+	 }
+	 
+	 .header p {
+	  font-size:1em;
+	 }
+	 
+	 .header button, .buy button  {
+	  padding: 5px 12px 5px 12px;
+	 }
+	 
+	 .header img {
+	  padding-top:10%;
+	 }
+
+	 /*NAVBAR*/
+	.navbar-header, .navbar-collapse.collapsing, .navbar-collapse.collapse.in {
+	    background-color: transparent !important;
+	}	 	 
+
+
+}
+
+
+
